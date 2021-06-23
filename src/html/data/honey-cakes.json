@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Медовик «Классический»",
+        "image": "/img/products/cakes/classic.png",
+        "article": "M-001",
+        "prices": "../html/data/common_prices.json"
+    },
+    {
+        "title": "Медовик «Шоколадный»",
+        "image": "/img/products/cakes/choco.png",
+        "article": "M-002",
+        "prices": "../html/data/common_prices.json"
+    },
+    {
+        "title": "Медовик «Молочный»",
+        "image": "/img/products/cakes/milky.png",
+        "article": "M-003",
+        "prices": "../html/data/common_prices.json"
+    },
+    {
+        "title": "Медовик «Дуэт»",
+        "image": "/img/products/cakes/duete.png",
+        "article": "M-004",
+        "prices": "../html/data/milky_prices.json"
+    },
+        {
+        "title": "Медовик Лоппи «Классический»",
+        "image": "/img/products/cakes/loppy_classic.png",
+        "article": "Л-001",
+        "prices": "../html/data/loppy_cakes_prices.json"
+    },
+    {
+        "title": "Медовик Лоппи «Шоколадный»",
+        "image": "/img/products/cakes/loppy_choco.png",
+        "article": "Л-002",
+        "prices": "../html/data/loppy_cakes_prices.json"
+    },
+    {
+        "title": "Медовик Лоппи «Молочный»",
+        "image": "/img/products/cakes/loppy_milky.png",
+        "article": "Л-003",
+        "prices": "../html/data/loppy_cakes_prices.json"
+    },
+    {
+        "title": "Медовик Лоппи «Дуэт»",
+        "image": "/img/products/cakes/loppy_duete.png",
+        "article": "Л-004",
+        "prices": "../html/data/loppy_cakes_prices.json"
+    }
+]

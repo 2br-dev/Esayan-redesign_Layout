@@ -1,0 +1,150 @@
+.input-field{
+
+    border-bottom: 1px solid $text;
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 20px;
+
+    & label{
+        position: absolute;
+        left: 2px;
+        top: 20px;
+        pointer-events: none;
+        transition: top .2s, color .2s, font-size .2s; 
+    }
+
+    & .error{
+        position: absolute;
+        font-size: 12px;
+        color: red;
+        font-weight: bold;
+    }
+
+    & input, textarea{
+
+        min-height: 40px;
+        padding: 0;
+        line-height: 40px;
+        border: 0;
+        width: 100%;
+        background: transparent;
+
+        &:focus{
+            outline: none;
+        }
+
+        &.styled{
+
+            width: 100%;
+            
+            &::placeholder{
+                color: transparent;
+            }
+
+            &:not(:placeholder-shown), &:focus{
+
+                &::placeholder{
+                    color: #aaa;
+                }
+
+                & ~ label{
+                    font-size: 10px;
+                    top: 4px;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.cheсk-wrapper{
+
+    & input[type="checkbox"].styled{
+        display: none;
+
+        &:checked + label{
+
+            &:before{
+                content: '\F012C';
+                font-family: 'Material Design Icons';
+                transform: translateY(3px);
+                box-shadow: 0 0 0 15px $call-to-action inset;
+                color: #fff;
+            }
+        }
+
+        & + label{
+            user-select: none;
+            cursor: pointer;
+            position: relative;
+            padding-left: 20px;
+
+            &:before{
+                position: absolute;
+                left: 0;
+                top: 0px;
+                content: '';
+                display: inline-block;
+                font-family: 'Material Design Icons';
+                background: #ccc;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                margin-right: 10px;
+                transform: translateY(3px);
+                transition: box-shadow .4s, background-color .4s;
+            }
+        }
+    }
+}
+
+input[type="number"]{
+
+    &:focus{
+        outline: none
+    }
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+        display: none;
+    }
+}
+
+input[type="radio"].styled{
+
+    display: none;
+
+    & [name=address]{
+        display: none;
+    }
+
+    & + label{
+
+        padding-left: 24px;
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border: 1px solid $call-to-action;
+            left: 0;
+            top: 5px;
+            border-radius: 50%;
+            transition: box-shadow .2s, background-color .4s;
+        }
+    }
+
+    &:checked + label{
+            
+        &:before{
+            background: $call-to-action;
+            box-shadow: 0 0 0 3px white inset;
+        }
+    }
+    
+}

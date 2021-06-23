@@ -1,0 +1,19 @@
+.global-wrapper#about{
+    
+    & .lazy{
+        padding-top: 70%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    & blockquote{
+
+        border-color: black !important;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    & p{
+        text-align: justify;
+    }
+}

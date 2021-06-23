@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Медовый ломтик «Классический»",
+        "image": "/img/products/slices/classic.png",
+        "article": "Л-001",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Медовый ломтик «Шоколадный»",
+        "image": "/img/products/slices/choco.png",
+        "article": "Л-002",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Медовый ломтик «Молочный»",
+        "image": "/img/products/slices/milky.png",
+        "article": "Л-003",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Медовый ломтик «Дуэт»",
+        "image": "/img/products/slices/duete.png",
+        "article": "Л-004",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Медовый ломтик «Классический»",
+        "image": "/img/products/slices/classic2.png",
+        "article": "Л-005",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Медовый ломтик «Шоколадный»",
+        "image": "/img/products/slices/choco2.png",
+        "article": "Л-006",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Медовый ломтик «Молочный»",
+        "image": "/img/products/slices/milky2.png",
+        "article": "Л-007",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Медовый ломтик «Дуэт»",
+        "image": "/img/products/slices/duete2.png",
+        "article": "Л-008",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Медовый ломтик Лоппи «Классический»",
+        "image": "/img/products/slices/loppy_classic.png",
+        "article": "Л-013",
+        "prices": "../html/data/loppy_slices_prices.json"
+    },
+    {
+        "title": "Медовый ломтик Лоппи «Шоколадный»",
+        "image": "/img/products/slices/loppy_choco.png",
+        "article": "Л-014",
+        "prices": "../html/data/loppy_slices_prices.json"
+    },
+    {
+        "title": "Медовый ломтик Лоппи «Молочный»",
+        "image": "/img/products/slices/loppy_milky.png",
+        "article": "Л-015",
+        "prices": "../html/data/loppy_slices_prices.json"
+    },
+    {
+        "title": "Медовый ломтик Лоппи «Дуэт»",
+        "image": "/img/products/slices/loppy_duete.png",
+        "article": "Л-016",
+        "prices": "../html/data/loppy_slices_prices.json"
+    }
+]

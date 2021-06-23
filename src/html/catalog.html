@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('./parts/head.html', {pagetitle: "Продукция"})
+</head>
+<body>
+    @@include('./parts/nav.html', {headerClass: "static"})
+    <main>
+        <div class="global-wrapper" id="account">
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12">
+                            <h1>Продукция</h1>
+                            <ul class="tabs" id="catalog-tabs">
+                                <li class="tab"><a href="#cakes" class="active">Торты</a></li>
+                                <li class="tab"><a href="#bubbles">Медовые шарики</a></li>
+                                <li class="tab"><a href="#slices">Медовые ломтики</a></li>
+                                <li class="tab"><a href="#pastries">Пирожные</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">                            
+                            <div id="cakes">
+                                <div class="row flex">
+                                    <div class="col s12">
+                                        <h2>Медовики</h2>
+                                    </div>
+                                    @@loop('./parts/product-card.html', './data/honey-cakes.json')
+                                </div>
+                                <div class="row flex">
+                                    <div class="col s12">
+                                        <h2>Торты</h2>
+                                    </div>
+                                    @@loop('./parts/product-card.html', './data/cakes.json')
+                                </div>
+                            </div>
+                            <div id="bubbles">
+                                <div class="row flex">
+                                    <div class="col s12">
+                                        <h2>Медовые шарики</h2>
+                                    </div>
+                                    @@loop('./parts/product-card.html', './data/bubbles.json')
+                                </div>
+                            </div>
+                            <div id="slices">
+                                <div class="row flex">
+                                    <div class="col s12">
+                                        <h2>Медовые ломтики</h2>
+                                    </div>
+                                    @@loop('./parts/product-card.html', './data/slices.json')
+                                </div>
+                            </div>
+                            <div id="pastries">
+                                <div class="row flex">
+                                    <div class="col s12">
+                                        <h2>Пирожные</h2>
+                                    </div>
+                                    @@loop('./parts/product-card.html', './data/pastries.json')
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    @@include('./parts/footer.html')
+    @@include('./parts/scripts.html')
+</body>
+</html>

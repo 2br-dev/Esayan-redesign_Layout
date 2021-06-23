@@ -1,0 +1,127 @@
+header{
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    transition: top .4s, background-color .4s;
+    box-shadow: none !important;
+    width: 100%;
+    
+    & a{
+        color: #fff;
+    }
+    
+    & nav{
+        
+        display: flex;
+
+        & .logo-wrapper{
+
+            flex-grow: 1;
+
+            & .logo{
+                display: inline-block;
+                line-height: 60px;
+                width: 150px;
+                padding: 0 20px;
+                background: url(/img/logo_white.svg) center center no-repeat;
+                background-size: auto 70%;
+            }
+        }
+
+        & > ul{
+
+            margin: 0;
+            display: flex;
+
+            & > li{
+                
+                position: relative;
+
+                &.desktop{
+
+                    @media(max-width: $large){
+                        display: none;
+                    }
+                }
+
+                & ul{
+                    box-shadow: 0 2px 6px rgba(black, .3);
+                    position: absolute;
+                    background: #fff;
+                    top: calc(100% - 20px);
+                    pointer-events: none;
+                    opacity: 0;
+                    transition: top .2s, opacity .2s;
+
+                    & li a{
+                        white-space: nowrap;
+                        display: block;
+                        color: $call-to-action;
+                    }
+                }
+
+                &:hover ul{
+
+                    opacity: 1;
+                    pointer-events: all;
+                    top: 100%;
+                }
+
+                & .sidenav-trigger{
+
+                    @media(min-width: $large){
+                        display: none;
+                    }
+                }
+
+                & a{
+                    display: inline-block;
+                    line-height: 60px;
+                    padding: 0 20px;
+                    transition: background-color .2s;
+
+                    @media(max-width: $large){
+                        padding: 0 15px;
+                    }
+
+                    &:hover, &.active{
+                        background: rgba(black, .1);
+                    }
+
+                    & i.mdi{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.hero{
+        top: 40px;
+    }
+
+    &.static{
+        top: 0;
+        background: $primary;
+    }
+}
+
+.sidenav{
+
+    & .user-view{
+
+        height: 140px;
+        background: $primary;
+
+        & .lazy{
+            height: 100%;
+            background-size: 200px auto;
+            background-position: top center;
+            background-repeat: no-repeat;
+
+            @media(max-width: $large){
+                background-position: center center;
+            }
+        }
+    }
+}

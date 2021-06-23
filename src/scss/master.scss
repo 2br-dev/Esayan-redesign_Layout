@@ -1,0 +1,20 @@
+// Import frameworks
+@import './framework/materialize';
+@import './framework/swiper_bundle';
+@import './framework/mdi/materialdesignicons';
+
+// Import custom parts
+@import './parts/vars';
+@import './parts/custom_grid';
+@import './parts/helpers';
+@import './parts/nav';
+@import './parts/footer';
+@import './parts/inputs';
+
+// Import entire pages
+@import './pages/main';
+@import './pages/about';
+@import './pages/contacts';
+@import './pages/product';
+@import './pages/profile';
+@import './pages/checkout';

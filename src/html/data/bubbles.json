@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Медовые шарики «Классические»",
+        "image": "/img/products/bubbles/classic.png",
+        "article": "",
+        "prices": "../html/data/bubble_prices.json"
+    },
+    {
+        "title": "Медовые шарики c белым кремом ",
+        "image": "/img/products/bubbles/cream.png",
+        "article": "",
+        "prices": "../html/data/bubble_prices.json"
+    }
+]

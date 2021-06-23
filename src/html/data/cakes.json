@@ -1,0 +1,8 @@
+[
+    {
+        "title": "Торт «Воздушный»",
+        "image": "/img/products/cakes/air.png",
+        "article": "",
+        "prices": "../html/data/air_prices.json"
+    }
+]

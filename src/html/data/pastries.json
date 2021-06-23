@@ -1,0 +1,116 @@
+[
+    {
+        "title": "Пирожное «Зебра»",
+        "image": "/img/products/pastries/zebra.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Пирожное «Идеал»",
+        "image": "/img/products/pastries/ideal.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Пирожное «Птичка»",
+        "image": "/img/products/pastries/birdy.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Пирожное «Микадо»",
+        "image": "/img/products/pastries/mikado.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Пирожное «Мишка»",
+        "image": "/img/products/pastries/berry.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Пирожное «Белочка»",
+        "image": "/img/products/pastries/squirrel.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Пирожное «Винни-пух»",
+        "image": "/img/products/pastries/vinny.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Пирожное «Сникерс»",
+        "image": "/img/products/pastries/snickers.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Пирожное «Фантазия»",
+        "image": "/img/products/pastries/fantasy.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Пирожное «Наполеон»",
+        "image": "/img/products/pastries/napoleon.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Пирожное «Мишка в шоколаде»",
+        "image": "/img/products/pastries/berry_choco.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Пирожное «Мулатка»",
+        "image": "/img/products/pastries/mulat.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Пирожное «Мулатка с вишней»",
+        "image": "/img/products/pastries/mulat_cherry.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Пирожное «Эклер»",
+        "image": "/img/products/pastries/ecler.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Пирожное «Медовые шарики»",
+        "image": "/img/products/pastries/bubbles.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Пирожное «Сказка» с творогом",
+        "image": "/img/products/pastries/fairytale.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Пирожное «Трубочка» с начинкой",
+        "image": "/img/products/pastries/tube.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Пирожное «Ёжик-ёжик»",
+        "image": "/img/products/pastries/hedgehog.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    },
+    {
+        "title": "Пирожное «Гата»",
+        "image": "/img/products/pastries/gata.png",
+        "article": "",
+        "prices": "../html/data/slices_prices.json"
+    }
+]

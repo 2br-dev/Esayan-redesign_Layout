@@ -1,0 +1,107 @@
+#product{
+
+    $default: #9D2929;
+    $orange: #BC3E15;
+    $bordo: #6F1025;
+    $blue: #3F94C7;
+    $bedge: #BA8067;
+
+
+    & section{
+        background: linear-gradient(to bottom, $default, darken($default, 20));
+        color: #fff;
+
+        &.orange{
+            background: linear-gradient(to bottom, $orange 30%, saturate(darken($orange, 20), 20));
+        }
+        &.bordo{
+            background: linear-gradient(to bottom, $bordo 30%, saturate(darken($bordo, 20), 20));
+        }
+        &.blue{
+            background: linear-gradient(to bottom, $blue 30%, saturate(darken($blue, 20), 20));
+        }
+        &.bedge{
+            background: linear-gradient(to bottom, $bedge 30%, saturate(darken($bedge, 20), 20));
+        }
+    }
+
+    & .product-image{
+        padding-top: 80%;
+        background-size: 90% auto;
+        background-position: left center;
+        background-repeat: no-repeat;
+        
+        @media(max-width: $medium){
+            margin: 80px 0;
+            background-size: contain;
+        }
+    }
+
+    & strong{
+        font-weight: bold;
+        display: block;
+    }
+
+    & .params{
+        
+        margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        & .param{
+            display: flex;
+            margin-right: 20px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+
+            & .lazy{
+                width: 50px;
+                height: 50px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            & span{
+                display: block;
+                width: 85px;
+            }
+        }
+    }
+
+    & .chars{
+
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px 0;
+
+        & .char{
+
+            width: calc(50% - 1.5rem);
+            margin-right: 1.5rem;
+            min-width: 200px;
+            margin-bottom: 40px;
+
+            & .header{
+                font-size: 32px;
+                font-weight: bold;
+            }
+
+            & .content{
+
+                & ul{
+                    margin: 0;
+
+                    & li{
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+
+    & .divider{
+        margin: 40px 0;
+    }
+
+}

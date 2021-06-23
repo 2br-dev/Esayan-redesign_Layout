@@ -1,0 +1,97 @@
+.global-wrapper#contacts{
+
+    section{
+
+        &#hero{
+
+            position: relative;
+
+            #map{
+                height: 65vh;
+                margin-top: 60px;
+
+                & .ol-overlaycontainer-stopevent{
+                    display: none;
+                }
+            }
+
+            & .contacts-overlay{
+
+                position: absolute;
+                z-index: 2;
+                top: 50%;
+                left: 50%;
+                transform: translateY(-50%);
+                width: fit-content;
+
+                @media(max-width: $large){
+                    transform: translate(-50%, -50%);
+                }
+
+                & .contacts-overlay-content{
+                    border: 1px solid $primary;
+                    padding: 40px 50px;
+                    background: #fff;
+
+                    @media(max-width: $medium){
+                        padding: 30px 30px;
+                    }
+                    
+                    & h1{
+                        margin: 0;
+                    }
+
+                    & .contacts-data{
+
+                        margin: 40px 0;
+
+                        & .kv-pair{
+    
+                            display: table-row;
+    
+                            & .key, & .value{
+                                display: table-cell;
+                                line-height: 30px;
+                            }
+    
+                            & .key{
+                                padding-right: 20px;
+                            }
+
+                            & .value a{
+
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+
+                    & .socials{
+                        font-size: 30px;
+                        text-align: center;
+                        width: fit-content;
+                        margin: auto;
+
+                        & a{
+                            margin: 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &#main-text{
+
+            & p{
+
+                & a{
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сайт компании Есаян || Главная</title>
+<link rel="stylesheet" href="/css/master.css" />
+</head>
+<body>
+    <header class="hero">
+    <nav class="container">
+        <div class="logo-wrapper">
+            <a href="/" class="logo">&nbsp;</a>
+        </div>
+        <ul>
+            <li class="desktop">
+                <a>Продукция</a>
+                <ul>
+                    <li><a class="tabs-href" href="/catalog.html#cakes">Торты</a></li>
+                    <li><a class="tabs-href" href="/catalog.html#bubbles">Медовые шарики</a></li>
+                    <li><a class="tabs-href" href="/catalog.html#slices">Медовые ломтики</a></li>
+                    <li><a class="tabs-href" href="/catalog.html#pastries">Пирожные</a></li>
+                </ul>
+            </li>
+            <li class="desktop"><a href="/about.html">О нас</a></li>
+            <li class="desktop"><a href="/contacts.html">Контакты</a></li>
+            <li>
+                <a><i class="mdi mdi-account"></i></a>
+                <ul>
+                    <!-- Авторизованные пользователи -->
+                    <li><a href="/profile.html">Профиль</a></li>
+                    <li><a href="">Выход</a></li>
+                    <!-- Гости -->
+                    <li><a href="#login" class="modal-trigger">Авторизация</a></li>
+                    <li><a>Регистрация</a></li>
+                </ul>
+            </li>
+            <li><a href="/checkout.html"><i class="mdi mdi-cart-outline"></i></a></li>
+            <li><a href="#mobile-menu" class="sidenav-trigger waves-effect"><i class="mdi mdi-menu"></i></a></li>
+        </ul>
+    </nav>
+</header>
+<ul class="sidenav" id="mobile-menu">
+    <li class="user-view">
+        <div class="lazy" data-src="/img/logo_white.svg"></div>
+    </li>
+    <li>
+        <a class="root">Продукция</a>
+        <ul>
+            <li><a class="tabs-href" href="/catalog.html#cakes">Торты</a></li>
+            <li><a class="tabs-href" href="/catalog.html#bubbles">Медовые шарики</a></li>
+            <li><a class="tabs-href" href="/catalog.html#slices">Медовые ломтики</a></li>
+            <li><a class="tabs-href" href="/catalog.html#pastries">Пирожные</a></li>
+        </ul>
+    </li>
+    <li><a class="root" href="">О нас</a></li>
+    <li><a class="root" href="">Контакты</a></li>
+</ul>
+    <main>
+        <div class="global-wrapper" id="main">
+            <section id="hero" class="hero center-align lazy" data-src="/img/hero_blurry.jpg">
+                <div class="hero-content">
+                    <h1>
+                        <strong>Кондитерский дом</strong>
+                        <span>семьи Есаян</span>
+                    </h1>
+                    <p>Оптовые поставки кондитерских изделий</p>
+                    <a href="" class="btn btn-white">Скачать каталог</a>
+                </div>
+            </section>
+            <section id="catalog">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 center-align">
+                            <h2>Каталог продукции</h2>
+                        </div>
+                        <div class="col l4 offset-l4 m8 offset-m2 s12 center-align">
+                            <p>
+                                Наш ассортимент включает кондитерских изделий включает в&nbsp;себя как&nbsp;малоизвестные, 
+                                новые для аудиториии наименования продукции, так&nbsp;и&nbsp;полюбившиеся с&nbsp;детства торты 
+                                и&nbsp;пирожные. Представляем вам:
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col xl2 offset-xl1 m4 s6">
+                            <a class="catalog-image-wrapper" href="/catalog.html" >
+                                <span class="catalog-image lazy" data-src="/img/honey_cakes.jpg"></span>
+                            </a>
+                            <p>
+                                <strong>Медовики</strong> – 
+                                наша коронная линейка десертов. Медовики готовятся по семейным рецептам, поэтому 
+                                у&nbsp;них знакомый вкус, который не оставит никого равнодушным
+                            </p>
+                        </div>
+                        <div class="col xl2 m4 s6">
+                            <a class="catalog-image-wrapper" href="/catalog.html" >
+                                <span class="catalog-image lazy" data-src="/img/cakes.jpg"></span>
+                            </a>
+                            <p>
+                                <strong>Торты</strong> – 
+                                это яркие и&nbsp;неожиданные вкусы для тех, кто находится в&nbsp;поисках 
+                                новых ощущений. Такие же натуральные и&nbsp;нежные, но по-своему необыкновенные!
+                            </p>
+                        </div>
+                        <div class="col xl2 m4 s6">
+                            <a class="catalog-image-wrapper" href="/catalog.html" >
+                                <span class="catalog-image lazy" data-src="/img/bubbles.jpg"></span>
+                            </a>
+                            <p>
+                                <strong>Медовые шарики</strong> – 
+                                неповторимые пирожные для ценителей натуральных продуктов. Изысканный вкус 
+                                медовика в&nbsp;новом формате, которым удобно лакомиться везде
+                            </p>
+                        </div>
+                        <div class="col xl2 m4 offset-m2 s6">
+                            <a class="catalog-image-wrapper" href="/catalog.html" >
+                                <span class="catalog-image lazy" data-src="/img/pastries.jpg"></span>
+                            </a>
+                            <p>
+                                <strong>Пирожные</strong> – 
+                                праздник вкуса  в&nbsp;формате, который идеально подойдёт для семейного 
+                                застолья.  Украсят собой любое чаепитие и&nbsp;зарядят отличным настроением
+                            </p>
+                        </div>
+                        <div class="col xl2 m4 s6 offset-s3">
+                            <a class="catalog-image-wrapper" href="/catalog.html" >
+                                <span class="catalog-image lazy" data-src="/img/honey_slices.jpg"></span>
+                            </a>
+                            <p>
+                                <strong>Медовые ломтики</strong> – 
+                                ваш любимый медовик в&nbsp;новом формате. Ломтики подойдут для тех, 
+                                кто вечно спешит, но не настолько, чтобы отказывать себе в&nbsp;маленьких радостях
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 center-align">
+                            <a href="/catalog.html" class="btn">Перейти в каталог</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="popular">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l12 center-align">
+                            <h2>Популярные товары</h2>
+                        </div>
+                        <div class="col s10 offset-s1">
+                            <div class="swiper-container" id="populars-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="product-card swiper-slide">
+    <a class="popular-image-wrapper" href="product.html">
+        <span class="lazy popular-image" data-src="/img/products/cakes/classic.png"></span>
+    </a>
+    <div class="data-block">
+        <div class="name-block">
+            <a class="name" href="product.html">Медовик «Классический»</a>
+            <span class="article">M-001</span>
+        </div>
+        <div class="data">
+            <div class="prices">
+                <div class="price-block">
+    <div class="weight">320г</div>
+    <div class="separator"></div>
+    <div class="price">80₽</div>
+</div><div class="price-block">
+    <div class="weight">650г</div>
+    <div class="separator"></div>
+    <div class="price">124₽</div>
+</div>
+            </div>
+        </div>
+        <div class="action">
+            <a href="" class="btn circle"><i class="mdi mdi-cart-plus"></i></a>
+        </div>
+    </div>
+</div><div class="product-card swiper-slide">
+    <a class="popular-image-wrapper" href="product.html">
+        <span class="lazy popular-image" data-src="/img/products/cakes/choco.png"></span>
+    </a>
+    <div class="data-block">
+        <div class="name-block">
+            <a class="name" href="product.html">Медовик «Шоколадный»</a>
+            <span class="article">M-002</span>
+        </div>
+        <div class="data">
+            <div class="prices">
+                <div class="price-block">
+    <div class="weight">320г</div>
+    <div class="separator"></div>
+    <div class="price">80₽</div>
+</div><div class="price-block">
+    <div class="weight">650г</div>
+    <div class="separator"></div>
+    <div class="price">124₽</div>
+</div>
+            </div>
+        </div>
+        <div class="action">
+            <a href="" class="btn circle"><i class="mdi mdi-cart-plus"></i></a>
+        </div>
+    </div>
+</div><div class="product-card swiper-slide">
+    <a class="popular-image-wrapper" href="product.html">
+        <span class="lazy popular-image" data-src="/img/products/cakes/milky.png"></span>
+    </a>
+    <div class="data-block">
+        <div class="name-block">
+            <a class="name" href="product.html">Медовик «Молочный»</a>
+            <span class="article">M-003</span>
+        </div>
+        <div class="data">
+            <div class="prices">
+                <div class="price-block">
+    <div class="weight">320г</div>
+    <div class="separator"></div>
+    <div class="price">80₽</div>
+</div><div class="price-block">
+    <div class="weight">650г</div>
+    <div class="separator"></div>
+    <div class="price">124₽</div>
+</div>
+            </div>
+        </div>
+        <div class="action">
+            <a href="" class="btn circle"><i class="mdi mdi-cart-plus"></i></a>
+        </div>
+    </div>
+</div><div class="product-card swiper-slide">
+    <a class="popular-image-wrapper" href="product.html">
+        <span class="lazy popular-image" data-src="/img/products/cakes/duete.png"></span>
+    </a>
+    <div class="data-block">
+        <div class="name-block">
+            <a class="name" href="product.html">Медовик «Дуэт»</a>
+            <span class="article">M-004</span>
+        </div>
+        <div class="data">
+            <div class="prices">
+                <div class="price-block">
+    <div class="weight">320г</div>
+    <div class="separator"></div>
+    <div class="price">75₽</div>
+</div><div class="price-block">
+    <div class="weight">650г</div>
+    <div class="separator"></div>
+    <div class="price">124₽</div>
+</div>
+            </div>
+        </div>
+        <div class="action">
+            <a href="" class="btn circle"><i class="mdi mdi-cart-plus"></i></a>
+        </div>
+    </div>
+</div><div class="product-card swiper-slide">
+    <a class="popular-image-wrapper" href="product.html">
+        <span class="lazy popular-image" data-src="/img/products/cakes/loppy_classic.png"></span>
+    </a>
+    <div class="data-block">
+        <div class="name-block">
+            <a class="name" href="product.html">Медовик Лоппи «Классический»</a>
+            <span class="article">Л-001</span>
+        </div>
+        <div class="data">
+            <div class="prices">
+                <div class="price-block">
+    <div class="weight">320г</div>
+    <div class="separator"></div>
+    <div class="price">80₽</div>
+</div>
+            </div>
+        </div>
+        <div class="action">
+            <a href="" class="btn circle"><i class="mdi mdi-cart-plus"></i></a>
+        </div>
+    </div>
+</div><div class="product-card swiper-slide">
+    <a class="popular-image-wrapper" href="product.html">
+        <span class="lazy popular-image" data-src="/img/products/cakes/loppy_choco.png"></span>
+    </a>
+    <div class="data-block">
+        <div class="name-block">
+            <a class="name" href="product.html">Медовик Лоппи «Шоколадный»</a>
+            <span class="article">Л-002</span>
+        </div>
+        <div class="data">
+            <div class="prices">
+                <div class="price-block">
+    <div class="weight">320г</div>
+    <div class="separator"></div>
+    <div class="price">80₽</div>
+</div>
+            </div>
+        </div>
+        <div class="action">
+            <a href="" class="btn circle"><i class="mdi mdi-cart-plus"></i></a>
+        </div>
+    </div>
+</div><div class="product-card swiper-slide">
+    <a class="popular-image-wrapper" href="product.html">
+        <span class="lazy popular-image" data-src="/img/products/cakes/loppy_milky.png"></span>
+    </a>
+    <div class="data-block">
+        <div class="name-block">
+            <a class="name" href="product.html">Медовик Лоппи «Молочный»</a>
+            <span class="article">Л-003</span>
+        </div>
+        <div class="data">
+            <div class="prices">
+                <div class="price-block">
+    <div class="weight">320г</div>
+    <div class="separator"></div>
+    <div class="price">80₽</div>
+</div>
+            </div>
+        </div>
+        <div class="action">
+            <a href="" class="btn circle"><i class="mdi mdi-cart-plus"></i></a>
+        </div>
+    </div>
+</div><div class="product-card swiper-slide">
+    <a class="popular-image-wrapper" href="product.html">
+        <span class="lazy popular-image" data-src="/img/products/cakes/loppy_duete.png"></span>
+    </a>
+    <div class="data-block">
+        <div class="name-block">
+            <a class="name" href="product.html">Медовик Лоппи «Дуэт»</a>
+            <span class="article">Л-004</span>
+        </div>
+        <div class="data">
+            <div class="prices">
+                <div class="price-block">
+    <div class="weight">320г</div>
+    <div class="separator"></div>
+    <div class="price">80₽</div>
+</div>
+            </div>
+        </div>
+        <div class="action">
+            <a href="" class="btn circle"><i class="mdi mdi-cart-plus"></i></a>
+        </div>
+    </div>
+</div>
+                                </div>
+                            </div>
+                            <div class="row extra-navi">
+                                <div class="col s6">
+                                    <div id="populars-navi"></div>
+                                </div>
+                                <div class="col s6 right-align">
+                                    <a href="/catalog.html" class="btn">Перейти в каталог</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="how-it-works">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 center-align">
+                            <h2>Как это работает</h2>
+                        </div>
+                    </div>
+                    <div class="row hiw-row">
+                        <div class="col l2 offset-l2 m3 s6 xs12">
+                            <div class="icon-wrapper">
+                                <div class="icon lazy" data-src="/img/cart.png"></div>
+                            </div>
+                            <strong>1. Вы оформляете заказ через сайт или по телефону</strong>
+                        </div>
+                        <div class="col l2 m3 s6 xs12">
+                            <div class="icon-wrapper">
+                                <div class="icon lazy" data-src="/img/manager.png"></div>
+                            </div>
+                            <strong>2. Мы связываемся с вами для уточнения деталей</strong>
+                        </div>
+                        <div class="col l2 m3 s6 xs12">
+                            <div class="icon-wrapper">
+                                <div class="icon lazy" data-src="/img/payment.png"></div>
+                            </div>
+                            <strong>3. Вы оплачиваете выставленный счет</strong>
+                        </div>
+                        <div class="col l2 m3 s6 xs12">
+                            <div class="icon-wrapper">
+                                <div class="icon lazy" data-src="/img/transport.png"></div>
+                            </div>
+                            <strong>4. Мы доставляем выбранную вами продукцию</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <div class="row flex no-margin">
+                    <div class="col m6 s12 no-padding">
+                        <div class="lazy family" data-src="/img/family.png"></div>
+                    </div>
+                    <div class="col m6 s12 no-padding">
+                        <div class="about-block-wrapper">
+                            <div class="about-block center-align">
+                                <h2>О компании</h2>
+                                <p>
+                                    Кондитерский дом «Есаянъ» начал свою работу в&nbsp;2005 году, когда Есаян Геворг Бархударович вместе со своей супругой Сусаной Мелисовной основали 
+                                    цех по производству медовых тортов и&nbsp;пирожных по семейным рецептам. Тогда в&nbsp;компании трудилось 4&nbsp;человека. Сейчас же на современном заводе 
+                                    площадью 4500 м² работают 85 кондитеров.
+                                </p>
+                                <p>
+                                    Компания постоянно развивается. Благодаря современным технологиям, удалось создать металлизированную упаковку, позволяющую хранить 
+                                    торты до 6&nbsp;месяцев. Неизменным остаются лишь рецепты и&nbsp;натуральные ингредиенты, используемые в&nbsp;производстве.
+                                </p>
+                                <div class="socials">
+                                    <a href=""><i class="mdi mdi-youtube"></i></a>
+                                    <a href=""><i class="mdi mdi-instagram"></i></a>
+                                    <a href=""><i class="mdi mdi-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="geography">
+                <div class="container">
+                    <div class="row flex">
+                        <div class="col xl4 l6 m12 s12">
+                            <div class="geography-text center-align">
+                                <h2>География компании</h2>
+                                <p>Мы реализуем нашу продукцию по всей России. Наши десерты представлены в Москве, Санкт-Петербурге, Краснодарском крае, республике Адыгея, Ростовской области, Ставропольском крае, Воронеже, Владикавказе, Нальчике, Самаре, Тольятти, Саратове, Хабаровске и Владивостоке. </p>
+                                <p>За пределами России наша продукция реализуется в Китае, Израиле и Турции.</p>
+                                <a href="" class="btn">Найти дилера</a>
+                            </div>
+                        </div>
+                        <div class="col xl8 l6 m12 s12"><div class="map lazy" data-src="/img/map.jpg"></div></div>
+                    </div>
+                </div>
+            </section>
+            <section id="coop">
+                <div class="container">
+                    <div class="row flex">
+                        <div class="col l5 offset-l7 m8 offset-m2 s12 center-align no-padding">
+                            <div class="coop-block">
+                                <div class="coop-block-content">
+                                    <h2>Сотрудничество</h2>
+                                    <p>
+                                        Компания Есаян открыта для новых предложений и&nbsp;заинтересована в&nbsp;плодотворном сотрудничестве 
+                                        с&nbsp;ритейлерами и&nbsp;дистрибьюторами, работающими по всей России. Для того, чтобы обсудить условия 
+                                        сотрудничества, цены и&nbsp;поставки, пожалуйста, свяжитесь с&nbsp;нашим менеджером по поставкам.
+                                    </p>
+                                    <a href="" class="btn btn-white">Стать дилером</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l2 m3 s12 xs12">
+                <a href="/" class="logo lazy" data-src="/img/logo_grey.svg"></a>
+            </div>
+            <div class="col l2 m3 s6 xs6">
+                <div class="footer-header">Навигация</div>
+                <ul>
+                    <li><a href="">Продукция</a></li>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col l2 m3 s6 xs6">
+                <div class="footer-header">Каталог</div>
+                <ul>
+                    <li><a href="">Торты</a></li>
+                    <li><a href="">Медовые шарики</a></li>
+                    <li><a href="">Медовые ломтики</a></li>
+                    <li><a href="">Пирожные</a></li>
+                </ul>
+            </div>
+            <div class="col l3 m3 s6 xs7">
+                <div class="footer-header">Контакты</div>
+                <ul>
+                    <li><a href=""><i class="mdi mdi-map-marker"></i><span>с. Великовечное, ул. Мира, 87</span></a></li>
+                    <li><a href=""><i class="mdi mdi-phone"></i><span>+7 861 553 9014</span></a></li>
+                    <li><a href=""><i class="mdi mdi-phone transparent"></i><span>+7 989 285 8148</span></a></li>
+                    <li><a href=""><i class="mdi mdi-email"></i><span>torti.esayan@mail.ru</span></a></li>
+                </ul>
+            </div>
+            <div class="col l3 m12 s6 xs12 socials-wrapper">
+                <div class="footer-header">Соц. сети</div>
+                <div class="socials">
+                    <a href="" class="social"><i class="mdi mdi-youtube"></i></a>
+                    <a href="" class="social"><i class="mdi mdi-instagram"></i></a>
+                    <a href="" class="social"><i class="mdi mdi-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            © Есаянъ, 2021
+            <a href="https://2br.agency" class="right" target="_blank" rel="nofollow">Дизайн, разработка – 2Br</a>
+        </div>
+    </div>
+</footer>
+<div class="modal" id="login">
+
+    <div class="modal-content">
+        <a class="modal-close modal-closer"><i class="mdi mdi-close"></i></a>
+        <h3>Авторизация</h3>
+        <div class="row">
+            <div class="col m12"><div class="input-field"><input type="text" class="styled" placeholder="Логин"><label for="">Логин</label></div></div>
+            <div class="col m12"><div class="input-field"><input type="password" class="styled" placeholder="Пароль"><label for="">Пароль</label></div></div>
+            <div class="col s12">
+                <a href="">Забыли пароль?</a>
+                <a href="" class="right">Уже есть аккаунт?</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer"><a class="btn modal-close">Принять</a></div>
+
+</div>
+    <script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/js/jquery.hyphenate.js"></script>
+<script src="/js/jquery.lazy.js"></script>
+<script src="/js/swiper-bundle.js"></script>
+<script src="/js/master.js"></script>
+</body>
+</html>
