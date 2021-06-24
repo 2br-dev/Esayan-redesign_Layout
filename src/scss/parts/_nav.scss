@@ -91,6 +91,25 @@ header{
                     & i.mdi{
                         font-size: 20px;
                     }
+
+                    &.cart{
+
+                        & .cart-wrapper{
+
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 20px;
+                            display: inline-block;
+                            padding: 0 12px;
+                            background: rgba(black, .2);
+                            transform: translateY(-2px);
+                            border-radius: 10px;
+
+                            & .separator{
+                                margin: 0 3px;
+                            }
+                        }
+                    }
                 }
             }
         }

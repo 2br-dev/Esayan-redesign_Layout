@@ -22931,6 +22931,17 @@ header {
             background: rgba(0, 0, 0, 0.1); }
           header nav > ul > li a i.mdi {
             font-size: 20px; }
+          header nav > ul > li a.cart .cart-wrapper {
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 20px;
+            display: inline-block;
+            padding: 0 12px;
+            background: rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+            border-radius: 10px; }
+            header nav > ul > li a.cart .cart-wrapper .separator {
+              margin: 0 3px; }
   header.hero {
     top: 40px; }
   header.static {
