@@ -22792,15 +22792,31 @@ body {
     body .socials a:hover {
       transform: scale(1.5); }
   body .product-card {
+    padding: 0 2px;
     padding-bottom: 10px;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    box-sizing: border-box; }
     body .product-card .popular-image-wrapper {
       padding: 8px;
       border-radius: 4px;
       background: rgba(0, 0, 0, 0.05);
       margin-bottom: 20px;
       transition: background-color .4s;
-      display: block; }
+      display: block;
+      position: relative; }
+      body .product-card .popular-image-wrapper .article {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 24px;
+        display: inline-block;
+        padding: 0 6px;
+        background: #bbb;
+        color: #fff;
+        border-radius: 4px;
+        margin-left: 10px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px; }
       body .product-card .popular-image-wrapper .popular-image {
         padding-top: 80%;
         background-size: contain;
@@ -22823,16 +22839,6 @@ body {
           margin-bottom: 10px; }
           body .product-card .data-block .name-block .name:hover {
             border-color: #D70000; }
-        body .product-card .data-block .name-block .article {
-          font-weight: bold;
-          font-size: 14px;
-          line-height: 24px;
-          display: inline-block;
-          padding: 0 10px;
-          background: #bbb;
-          color: #fff;
-          border-radius: 4px;
-          margin-left: 10px; }
       body .product-card .data-block .data {
         flex-grow: 1; }
         body .product-card .data-block .data .prices {

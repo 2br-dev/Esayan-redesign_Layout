@@ -114,8 +114,10 @@ body{
 
     & .product-card{
 
+        padding: 0 2px;
         padding-bottom: 10px;
         margin-bottom: 60px;
+        box-sizing: border-box;
 
         & .popular-image-wrapper{
             padding: 8px;
@@ -124,6 +126,22 @@ body{
             margin-bottom: 20px;
             transition: background-color .4s;
             display: block;
+            position: relative;
+
+            & .article{
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 24px;
+                display: inline-block;
+                padding: 0 6px;
+                background: #bbb;
+                color: #fff;
+                border-radius: 4px;
+                margin-left: 10px;
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+            }
 
             & .popular-image{
                 padding-top: 80%;
@@ -159,18 +177,6 @@ body{
 
                         border-color: $call-to-action;
                     }
-                }
-
-                & .article{
-                    font-weight: bold;
-                    font-size: 14px;
-                    line-height: 24px;
-                    display: inline-block;
-                    padding: 0 10px;
-                    background: #bbb;
-                    color: #fff;
-                    border-radius: 4px;
-                    margin-left: 10px;
                 }
             }
 
