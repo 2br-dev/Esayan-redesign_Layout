@@ -8,13 +8,16 @@
         <div class="name-block">
             <a class="name" href="product.html">@@title</a>
         </div>
-        <div class="data">
-            <div class="prices">
-                @@loop('./price_block.html', '@@prices')
+        <div class="card-separator"></div>
+        <div class="data-wrapper">
+            <div class="data">
+                <div class="prices">
+                    @@loop('./price_block.html', '@@prices')
+                </div>
             </div>
-        </div>
-        <div class="action">
-            <a href="" class="btn circle"><i class="mdi mdi-cart-plus"></i></a>
+            <div class="action">
+                <a href="" class="btn circle"><i class="mdi mdi-cart-plus"></i></a>
+            </div>
         </div>
     </div>
 </div>

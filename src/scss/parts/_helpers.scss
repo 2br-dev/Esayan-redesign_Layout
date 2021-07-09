@@ -11,6 +11,10 @@ body{
         @media(max-width: $large){
             font-size: 3rem;
         }
+
+        & strong{
+            font-weight: 400;
+        }
     }
 
     & h2{
@@ -118,6 +122,17 @@ body{
         padding-bottom: 10px;
         margin-bottom: 60px;
         box-sizing: border-box;
+        height: calc(100% - 60px);
+        display: flex;
+        flex-direction: column;
+
+        & .card-separator{
+            flex-grow: 1;
+        }
+
+        & .data-block{
+            flex-grow: 1;
+        }
 
         & .popular-image-wrapper{
             padding: 8px;
@@ -161,6 +176,7 @@ body{
 
             display: flex;
             flex-wrap: wrap;
+            flex-direction: column;
 
             & .name-block{
 
@@ -169,47 +185,68 @@ body{
                 & .name{
                     font-weight: bold;
                     font-size: 18px;
-                    border-bottom: 1px solid #ccc;
-                    display: inline-block;
+                    display: block;
                     margin-bottom: 10px;
+                }
 
-                    &:hover{
-
-                        border-color: $call-to-action;
-                    }
+                &:hover ~ .data-wrapper{
+                    border-color: $call-to-action;
                 }
             }
 
-            & .data{
-                flex-grow: 1;
+            & .data-wrapper{
 
-                & .prices{
+                display: flex;
+                flex-direction: row;
+                border-top: 1px solid #ccc;
+                padding-top: 10px;
 
-                    display: flex;
-                    font-weight: bold;
-
-                    & .price-block{
-                        flex-grow: 1;
+                & .data{
+                    flex-grow: 1;
+    
+                    & .prices{
+    
                         display: flex;
-                        margin-right: 10%;
-
-                        & .separator{
+                        font-weight: bold;
+    
+                        & .price-block{
                             flex-grow: 1;
-                            border-bottom: 1px dotted #ccc;
-                            transform: translatey(-4px);
+                            display: flex;
+                            margin-right: 10%;
+
+                            & .weight{
+                                font-weight: 400;
+                                line-height: 30px;
+                            }
+
+                            & .price{
+                                font-size: 21px;
+                                line-height: 30px;
+                            }
+    
+                            & .separator{
+                                flex-grow: 1;
+                                border-bottom: 1px solid #aaa;
+                                transform: translatey(-4px);
+                            }
                         }
                     }
                 }
+    
+                & .action{
+                    text-align: right;
+                    width: 30px;
+                    display: flex;
+                    justify-items: right;
+                    align-items: flex-end;
+                }
             }
 
-            & .action{
-                text-align: right;
-                width: 30px;
-                display: flex;
-                justify-items: right;
-                align-items: flex-end;
-            }
         }
+    }
+
+    & strong{
+        font-weight: bold;
     }
 
     & .hidden{

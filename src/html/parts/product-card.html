@@ -1,20 +1,25 @@
-<div class="product-card col l3 m6 s12">
-    <a class="popular-image-wrapper" href="product.html">
-        <span class="lazy popular-image" data-src="@@image">
-            <span class="article">@@article</span>
-        </span>
-    </a>
-    <div class="data-block">
-        <div class="name-block">
-            <a class="name" href="product.html">@@title</a>
-        </div>
-        <div class="data">
-            <div class="prices">
-                @@loop('./price_block.html', '@@prices')
+<div class="col l3 m6 s12">
+    <div class="product-card">
+        <a class="popular-image-wrapper" href="product.html">
+            <span class="lazy popular-image" data-src="@@image">
+                <span class="article">@@article</span>
+            </span>
+        </a>
+        <div class="data-block">
+            <div class="name-block">
+                <a class="name" href="product.html">@@title</a>
             </div>
-        </div>
-        <div class="action">
-            <a href="" class="btn circle"><i class="mdi mdi-cart-plus"></i></a>
+            <div class="card-separator"></div>
+            <div class="data-wrapper">
+                <div class="data">
+                    <div class="prices">
+                        @@loop('./price_block.html', '@@prices')
+                    </div>
+                </div>
+                <div class="action">
+                    <a href="" class="btn circle"><i class="mdi mdi-cart-plus"></i></a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

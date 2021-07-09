@@ -96,6 +96,14 @@
                     }
                 }
             }
+
+            & .swiper-wrapper{
+
+                & .product-card{
+                    margin-bottom: 0;
+                    height: auto;
+                }
+            }
         }
 
         &#how-it-works{
