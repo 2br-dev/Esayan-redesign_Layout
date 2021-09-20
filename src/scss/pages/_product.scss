@@ -5,12 +5,29 @@
     $bordo: #6F1025;
     $blue: #3F94C7;
     $bedge: #BA8067;
+    $choco: #75381c;
+    $pink: #ff7676;
+    $light-bedge: #f8e4db;
+    $light-blue: #e0ecf3;
+    $light-pink: #f7d6d6;
 
 
     & section{
-        background: linear-gradient(to bottom, $default, darken($default, 20));
+
         color: #fff;
 
+        &.light{
+            color: $text;
+
+            & a{
+                color: $text;
+                border-color: $text;
+            }
+        }
+        
+        &.default{
+            background: linear-gradient(to bottom, $default, darken($default, 20));
+        }
         &.orange{
             background: linear-gradient(to bottom, $orange 30%, saturate(darken($orange, 20), 20));
         }
@@ -22,6 +39,21 @@
         }
         &.bedge{
             background: linear-gradient(to bottom, $bedge 30%, saturate(darken($bedge, 20), 20));
+        }
+        &.pink{
+            background: linear-gradient(to bottom, $pink 30%, desaturate(darken($pink, 20), 30));
+        }
+        &.choco{
+            background: linear-gradient(to bottom, $choco 30%, saturate(darken($choco, 20), 20));
+        }
+        &.light-bedge{
+            background: linear-gradient(to bottom, $light-bedge 30%, darken($light-bedge, 5));
+        }
+        &.light-blue{
+            background: linear-gradient(to bottom, $light-blue 30%, darken($light-blue, 5));
+        }
+        &.light-pink{
+            background: linear-gradient(to bottom, $light-pink 30%, darken($light-pink, 5));
         }
     }
 

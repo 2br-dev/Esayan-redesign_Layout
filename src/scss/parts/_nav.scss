@@ -9,6 +9,28 @@ header{
     & a{
         color: #fff;
     }
+
+    &.light{
+
+        & a{
+            color: $call-to-action;
+        }
+
+        & li ul a{
+            color: $call-to-action;
+        }
+
+        & nav .logo-wrapper .logo{
+            background-image: url(/img/logo_color.svg);
+        }
+
+        &.static{
+
+            & nav .logo-wrapper .logo{
+                background-image: url(/img/logo_white.svg);
+            }
+        }
+    }
     
     & nav{
         
@@ -140,6 +162,10 @@ header{
     &.static{
         top: 0;
         background: $primary;
+
+        & a{
+            color: #fff;
+        }
     }
 }
 

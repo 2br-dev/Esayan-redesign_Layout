@@ -22910,6 +22910,14 @@ header {
   width: 100%; }
   header a {
     color: #fff; }
+  header.light a {
+    color: #D70000; }
+  header.light li ul a {
+    color: #D70000; }
+  header.light nav .logo-wrapper .logo {
+    background-image: url(/img/logo_color.svg); }
+  header.light.static nav .logo-wrapper .logo {
+    background-image: url(/img/logo_white.svg); }
   header nav {
     display: flex; }
     header nav .logo-wrapper {
@@ -22989,6 +22997,8 @@ header {
   header.static {
     top: 0;
     background: #9D2929; }
+    header.static a {
+      color: #fff; }
 
 .sidenav .user-view {
   height: 140px;
@@ -23385,8 +23395,14 @@ input[type="radio"].styled {
   text-decoration: underline; }
 
 #product section {
-  background: linear-gradient(to bottom, #9D2929, #4c1414);
   color: #fff; }
+  #product section.light {
+    color: #333; }
+    #product section.light a {
+      color: #333;
+      border-color: #333; }
+  #product section.default {
+    background: linear-gradient(to bottom, #9D2929, #4c1414); }
   #product section.orange {
     background: linear-gradient(to bottom, #BC3E15 30%, #6b1a00); }
   #product section.bordo {
@@ -23395,6 +23411,16 @@ input[type="radio"].styled {
     background: linear-gradient(to bottom, #3F94C7 30%, #145f8c); }
   #product section.bedge {
     background: linear-gradient(to bottom, #BA8067 30%, #934828); }
+  #product section.pink {
+    background: linear-gradient(to bottom, #ff7676 30%, #db3434); }
+  #product section.choco {
+    background: linear-gradient(to bottom, #75381c 30%, #270f04); }
+  #product section.light-bedge {
+    background: linear-gradient(to bottom, #f8e4db 30%, #f4d4c6); }
+  #product section.light-blue {
+    background: linear-gradient(to bottom, #e0ecf3 30%, #cee1ec); }
+  #product section.light-pink {
+    background: linear-gradient(to bottom, #f7d6d6 30%, #f3c1c1); }
 
 #product .product-image {
   padding-top: 80%;
