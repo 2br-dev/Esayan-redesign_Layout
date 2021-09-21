@@ -14,6 +14,8 @@ $(() => {
 //= Инициализация ====================================================
 function init(){
     $('p').hyphenate();
+
+    updateFixedItems();
     
     Sidenav = M.Sidenav.init(document.querySelector('.sidenav'), {
 
