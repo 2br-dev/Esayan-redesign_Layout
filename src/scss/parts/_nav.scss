@@ -78,7 +78,7 @@ header{
                     & li a{
                         white-space: nowrap;
                         display: block;
-                        color: $call-to-action;
+                        color: $call-to-action !important;
                     }
                 }
 

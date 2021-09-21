@@ -22761,7 +22761,9 @@ body {
       border-radius: 15px;
       transition: background-color .2s, border-color .2s, color .2s, box-shadow .2s; }
       body a.btn.circle {
-        width: 30px;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
         padding: 0;
         text-align: center;
         border-radius: 50%; }
@@ -22838,47 +22840,36 @@ body {
         background: rgba(0, 0, 0, 0.2); }
     body .product-card .data-block {
       display: flex;
-      flex-wrap: wrap;
       flex-direction: column; }
-      body .product-card .data-block .name-block {
-        width: 100%; }
-        body .product-card .data-block .name-block .name {
-          font-weight: bold;
-          font-size: 18px;
-          display: block;
-          margin-bottom: 10px; }
-        body .product-card .data-block .name-block:hover ~ .data-wrapper {
-          border-color: #D70000; }
+      body .product-card .data-block .name-block .name {
+        font-weight: bold;
+        font-size: 18px;
+        display: block;
+        margin-bottom: 10px; }
       body .product-card .data-block .data-wrapper {
-        display: flex;
-        flex-direction: row;
-        border-top: 1px solid #ccc;
-        padding-top: 10px; }
+        display: flex; }
         body .product-card .data-block .data-wrapper .data {
           flex-grow: 1; }
-          body .product-card .data-block .data-wrapper .data .prices {
-            display: flex;
-            font-weight: bold; }
-            body .product-card .data-block .data-wrapper .data .prices .price-block {
+          body .product-card .data-block .data-wrapper .data .prices .price-block {
+            display: flex; }
+            body .product-card .data-block .data-wrapper .data .prices .price-block .weight {
+              line-height: 30px; }
+            body .product-card .data-block .data-wrapper .data .prices .price-block .separator {
               flex-grow: 1;
-              display: flex;
-              margin-right: 10%; }
-              body .product-card .data-block .data-wrapper .data .prices .price-block .weight {
-                font-weight: 400;
-                line-height: 30px; }
-              body .product-card .data-block .data-wrapper .data .prices .price-block .price {
-                font-size: 21px;
-                line-height: 30px; }
-              body .product-card .data-block .data-wrapper .data .prices .price-block .separator {
-                flex-grow: 1;
-                border-bottom: 1px solid #aaa;
-                transform: translatey(-4px); }
+              border-bottom: 1px dotted #ccc; }
+            body .product-card .data-block .data-wrapper .data .prices .price-block .price {
+              font-size: 18px;
+              line-height: 30px;
+              font-weight: 700; }
         body .product-card .data-block .data-wrapper .action {
-          text-align: right;
-          width: 30px;
           display: flex;
-          justify-items: right;
-          align-items: flex-end; }
+          padding-left: 20px;
+          flex-shrink: 0;
+          align-items: center; }
+    body .product-card .unit {
+      text-align: center;
+      font-size: 12px;
+      font-style: italic; }
   body strong {
     font-weight: bold; }
   body .hidden {
@@ -22900,6 +22891,32 @@ body {
       position: absolute;
       right: 10px;
       top: 10px; }
+  body .breadcrumbs {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0;
+    padding: 12px 0;
+    display: flex; }
+    @media (max-width: 1200px) {
+      body .breadcrumbs {
+        margin-top: 40px; } }
+    @media (max-width: 800px) {
+      body .breadcrumbs {
+        margin-top: 80px; } }
+    body .breadcrumbs .crumb:not(:last-of-type):after {
+      content: '›';
+      padding: 0 10px; }
+    @media (max-width: 600px) {
+      body .breadcrumbs .crumb {
+        display: none; }
+        body .breadcrumbs .crumb.home, body .breadcrumbs .crumb.current {
+          display: unset; } }
+    body .breadcrumbs .crumb a {
+      color: #fff; }
+      body .breadcrumbs .crumb a:hover {
+        text-decoration: underline; }
+    body .breadcrumbs .crumb span {
+      color: rgba(255, 255, 255, 0.4); }
 
 header {
   position: fixed;
@@ -22948,7 +22965,7 @@ header {
           header nav > ul > li ul li a {
             white-space: nowrap;
             display: block;
-            color: #D70000; }
+            color: #D70000 !important; }
         header nav > ul > li:hover ul {
           opacity: 1;
           pointer-events: all;

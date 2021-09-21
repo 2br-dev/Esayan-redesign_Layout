@@ -43,7 +43,9 @@ body{
             transition: background-color .2s, border-color .2s, color .2s, box-shadow .2s;
 
             &.circle{
-                width: 30px;
+                width: 36px;
+                height: 36px;
+                line-height: 36px;
                 padding: 0;
                 text-align: center;
                 border-radius: 50%;
@@ -175,12 +177,9 @@ body{
         & .data-block{
 
             display: flex;
-            flex-wrap: wrap;
             flex-direction: column;
 
             & .name-block{
-
-                width: 100%;
 
                 & .name{
                     font-weight: bold;
@@ -188,60 +187,53 @@ body{
                     display: block;
                     margin-bottom: 10px;
                 }
-
-                &:hover ~ .data-wrapper{
-                    border-color: $call-to-action;
-                }
             }
 
             & .data-wrapper{
 
                 display: flex;
-                flex-direction: row;
-                border-top: 1px solid #ccc;
-                padding-top: 10px;
 
                 & .data{
+
                     flex-grow: 1;
-    
+
                     & .prices{
-    
-                        display: flex;
-                        font-weight: bold;
-    
+
                         & .price-block{
-                            flex-grow: 1;
+
                             display: flex;
-                            margin-right: 10%;
 
                             & .weight{
-                                font-weight: 400;
                                 line-height: 30px;
+                            }
+
+                            & .separator{
+                                flex-grow: 1;
+                                border-bottom: 1px dotted #ccc;
                             }
 
                             & .price{
-                                font-size: 21px;
+                                font-size: 18px;
                                 line-height: 30px;
-                            }
-    
-                            & .separator{
-                                flex-grow: 1;
-                                border-bottom: 1px solid #aaa;
-                                transform: translatey(-4px);
+                                font-weight: 700;
                             }
                         }
                     }
                 }
-    
+
                 & .action{
-                    text-align: right;
-                    width: 30px;
                     display: flex;
-                    justify-items: right;
-                    align-items: flex-end;
+                    padding-left: 20px;
+                    flex-shrink: 0;
+                    align-items: center;
                 }
             }
+        }
 
+        & .unit{
+            text-align: center;
+            font-size: 12px;
+            font-style: italic;
         }
     }
 
@@ -281,6 +273,53 @@ body{
                 position: absolute;
                 right: 10px;
                 top: 10px;
+            }
+        }
+    }
+
+    & .breadcrumbs{
+    
+        border-top: 1px solid rgba(#fff, .2);
+        border-bottom: 1px solid rgba(#fff, .2);
+        margin:0;
+        padding: 12px 0;
+        display: flex;
+        
+        @media(max-width: $large){
+            margin-top: 40px;
+        }
+        
+        @media(max-width: $medium){
+            margin-top: 80px;
+        }
+        
+        & .crumb{
+            
+            &:not(:last-of-type):after{
+    
+                content: '›';
+                padding: 0 10px;
+            }
+            
+            @media(max-width: 600px){
+                
+                display: none;
+                
+                &.home, &.current{
+                    display: unset;
+                }
+            }
+            
+            & a{
+                color: #fff;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            
+            & span{
+                color: rgba(#fff, .4);
             }
         }
     }
